@@ -6,10 +6,18 @@ Run this model in C#.
 using OpenAI;
 using OpenAI.Chat;
 using System.ClientModel;
+using Microsoft.Extensions.Configuration;
 
 // To authenticate with the model you will need to generate a personal access token (PAT) in your GitHub settings. 
 // Create your PAT token by following instructions here: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens
-var credential = System.Environment.GetEnvironmentVariable("GITHUB_TOKEN");
+// Secure token retrieval using .NET Secret Manager
+var configuration = new ConfigurationBuilder()
+    .AddUserSecrets<Program>()
+    .Build();
+
+var credential = configuration["GitHubToken"] 
+    ?? throw new InvalidOperationException(
+        "GitHub token not configured. Run: dotnet user-secrets set GitHubToken YOUR_TOKEN");
 
 var openAIOptions = new OpenAIClientOptions()
 {
