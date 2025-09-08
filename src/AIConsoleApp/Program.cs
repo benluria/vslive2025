@@ -27,15 +27,13 @@ var openAIOptions = new OpenAIClientOptions()
 var client = new ChatClient("openai/gpt-4o-mini", new ApiKeyCredential(credential), openAIOptions);
 
 
-Console.WriteLine("VSLIVE! 2025 - AI Chat Console");
-Console.WriteLine("================================");
-Console.WriteLine("Ask me anything about C# and .NET! (type 'exit' to quit)");
+DisplayWelcomeMessage();
 
 while (true)
 {
     Console.Write("\nYour question: ");
     var userInput = Console.ReadLine();
-    
+
     if (string.IsNullOrEmpty(userInput) || userInput.ToLower() == "exit")
         break;
 
@@ -62,6 +60,18 @@ while (true)
     {
         Console.WriteLine($"Error: {ex.Message}");
     }
+}
+
+static void DisplayWelcomeMessage()
+{
+    Console.WriteLine("VSLIVE! 2025 - AI Chat Console (Secure Version)");
+    Console.WriteLine("===============================================");
+    Console.WriteLine("Features:");
+    Console.WriteLine("- Secure token management with .NET Secret Manager");
+    Console.WriteLine("- Integration with GitHub Models API");
+    Console.WriteLine("- Interactive chat interface");
+    Console.WriteLine();
+    Console.WriteLine("Ask me anything about C# and .NET! (type 'exit' to quit)");
 }
 
 Console.WriteLine("\nThanks for using the AI Chat Console!");
