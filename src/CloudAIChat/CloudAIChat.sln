@@ -1,0 +1,34 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D62F82B7-0BCC-46DE-ACA0-92D1D1E92B40}") = "CloudAIChat.AppHost", "CloudAIChat.AppHost\CloudAIChat.AppHost.csproj", "{A36EBE3B-EEDE-440B-B97E-5FAF0C457D59}"
+EndProject
+Project("{D62F82B7-0BCC-46DE-ACA0-92D1D1E92B40}") = "CloudAIChat.ServiceDefaults", "CloudAIChat.ServiceDefaults\CloudAIChat.ServiceDefaults.csproj", "{89912863-D912-44A4-9845-67BDF082983A}"
+EndProject
+Project("{D62F82B7-0BCC-46DE-ACA0-92D1D1E92B40}") = "CloudAIChat.Web", "CloudAIChat.Web\CloudAIChat.Web.csproj", "{DCC2F07B-87FE-429E-AFEB-FD541A2BCB01}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A36EBE3B-EEDE-440B-B97E-5FAF0C457D59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A36EBE3B-EEDE-440B-B97E-5FAF0C457D59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A36EBE3B-EEDE-440B-B97E-5FAF0C457D59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A36EBE3B-EEDE-440B-B97E-5FAF0C457D59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89912863-D912-44A4-9845-67BDF082983A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89912863-D912-44A4-9845-67BDF082983A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89912863-D912-44A4-9845-67BDF082983A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89912863-D912-44A4-9845-67BDF082983A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCC2F07B-87FE-429E-AFEB-FD541A2BCB01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCC2F07B-87FE-429E-AFEB-FD541A2BCB01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCC2F07B-87FE-429E-AFEB-FD541A2BCB01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCC2F07B-87FE-429E-AFEB-FD541A2BCB01}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
